@@ -3,16 +3,18 @@ import { Provider } from "react-redux";
 
 import { store } from "./store/store";
 
-import Add from "./components/Add";
-import View from "./components/View";
+// import Add from "./components/Add";
+// import View from "./components/View";
+import GameHolder from "./components/Container/GameHolder";
 
 const App = () => {
 	return (
 		<Provider
 			store={ store }
 		>
-			<Add />
-			<View />
+			{/* <Add />
+			<View /> */}
+			<GameHolder />
 		</Provider>
 	);
 }
